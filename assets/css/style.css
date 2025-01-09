@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+body{
+    background-color: var(--Grey-900);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 20%;
+    margin-top: 10rem;
+    padding: 20px;
+    background-color: var(--Grey-800);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box .log{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.box h2{
+    color: var(--White);
+    margin: .2rem 0;
+    font-size: 22px;
+}
+
+.box a{
+    color: var(--Green);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.box p{
+    margin: 1rem 0;
+    color: var(--White);
+
+}
+
+.box .link li a button{
+    color: var(--White);
+    border: none;
+    outline: none;
+    background-color: var(--Grey-700);
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.box .link li a button:hover{
+    background-color:hsl(0, 0%, 12%);
+    transition: all 0.4s;
+}
+
+@media only screen and (max-width: 375px){
+
+    .box{
+        width: 90%;
+    }
+
+}
+
+
+@media only screen and (max-width: 779px){
+    .box{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1230px){
+
+    .box{
+        width: 90%;
+    }
+}
